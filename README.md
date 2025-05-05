@@ -15,7 +15,7 @@ GPT Assistant is an AI-powered chatbot that uses OpenAI's GPT-3 model to provide
 
 Make sure you have Python 3.8+ installed.
 
-You also need to have an OpenAI API key. You can get one by signing up on [OpenAI](https://beta.openai.com/signup/).
+You also need to have an OpenAI API key. You can get one by signing up on [OpenAI](https://beta.openai.com/signup/). ( or look into "API_KEY_SETUP.md"
 
 ## Installation
 
