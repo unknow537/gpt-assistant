@@ -9,32 +9,28 @@ To use this chatbot, you need an OpenAI API key. Follow these steps:
 
 ## Using the API Key
 
-You have two options to use the API key:
+# === Option 1: Set the API key directly in your code (not recommended for production) ===
 
-### Option 1: Set it directly in the code (not recommended for production)
-
-Edit the line in `app.py`:
-
-```python
+# Add this to your main Python file:
+import openai
 openai.api_key = "your-openai-api-key-here"
 
-## Option 2: Use environment variables (recommended)
+# === Option 2: Use environment variables (recommended) ===
 
-1. Create a `.env` file in the root of your project directory.
-2. Add your OpenAI API key like this (replace with your actual key):
-OPENAI_API_KEY=your-openai-api-key-here
+# 1. Create a `.env` file in the root of your project directory.
+# 2. Add your OpenAI API key like this (replace with your actual key):
+# OPENAI_API_KEY=your-openai-api-key-here
 
-3. Install the `python-dotenv` package if it's not already installed:
-
-```bash
+# 3. Install the `python-dotenv` package if it's not already installed:
 pip install python-dotenv
 
-4.	In your Python script (e.g., app.py), add this at the top:
+# 4. In your Python script (e.g., `app.py`), add this at the top:
 from dotenv import load_dotenv
 import os
 
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-5.	Make sure your .env file is not pushed to GitHub. Add this line to your .gitignore file:
-.env
+# 5. Make sure your `.env` file is **not** pushed to GitHub.
+# Add this line to your `.gitignore` file:
+# .env
